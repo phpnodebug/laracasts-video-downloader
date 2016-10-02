@@ -17,13 +17,13 @@ $ composer require oaattia/laracasts-downloader
 ### To download the lessons for the series use the following command
 
 ``` bash
-php console laracasts:download https://laracasts.com/series/series-name
+php console laracasts:download https://laracasts.com/series/series-name/
 ```
 
 ### To view the lessons in the current page ( series page ), use the following command
 
 ``` bash
-php console laracasts:view https://laracasts.com/series/series-name
+php console laracasts:view https://laracasts.com/series/series-name/
 ```
 
 ## Change log
