@@ -94,7 +94,6 @@ class LaraCastsFetcher
      */
     public function getPageTitleAndLessonsAndUrls($url)
     {
-        
         $this->validateUrl($url);
         $this->login();
 
@@ -163,7 +162,7 @@ class LaraCastsFetcher
     /**
      * @param $fromUrl
      * @param $output
-     * 
+     *
      * @return bool
      */
     public function downloadLink($fromUrl, $output, $lessonTitle)
@@ -175,7 +174,7 @@ class LaraCastsFetcher
 
     /**
      * @param $fromUrl
-     * 
+     *
      * @return string
      */
     private function getRedirectUrl($fromUrl)
