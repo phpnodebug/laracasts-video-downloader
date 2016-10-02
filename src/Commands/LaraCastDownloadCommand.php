@@ -52,7 +52,7 @@ class LaraCastDownloadCommand extends Command
         $output->write('<info>done </info>', true);
         
         $output->write('<comment>Fetching download links from page ... </comment>');
-        if ( ! empty($pagesContents)) {
+        if (! empty($pagesContents)) {
             $resolver = new Resolver();
             foreach ($pagesContents as $content) {
                 $lessonTitle   = $resolver->getLessonsTitle($content);
@@ -72,5 +72,4 @@ class LaraCastDownloadCommand extends Command
     
         $output->writeln('<comment>Download finished ... </comment>');
     }
-    
 }
