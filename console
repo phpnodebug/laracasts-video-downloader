@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+// Include the composer autoloader
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Get the env file
+$env = new \Dotenv\Dotenv(__DIR__);
+$env->load();
+
+
+// Import the Symfony Console Application
+use Symfony\Component\Console\Application;
+
+$app = new Application();
+$app->addCommands([
+	new \Oaattia\Downloader\Commands\LaraCastViewCommand(),
+	new \Oaattia\Downloader\Commands\LaraCastDownloadCommand()
+]);
+$app->run();
